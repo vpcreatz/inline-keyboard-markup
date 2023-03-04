@@ -1,8 +1,15 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-# Create a new Pyrogram client
-app = Client("6280228398:AAFZQprb6QBBy_FuYwbZwUdf_q9QIbrP-dI")
+api_id = "20960397"
+api_hash = "d68d847d3abb2087bf74f5d0683c2993"
+bot_token = "6280228398:AAFZQprb6QBBy_FuYwbZwUdf_q9QIbrP-dI"
+
+app = Client(
+    "app",
+    api_id=api_id, api_hash=api_hash,
+    bot_token=bot_token
+)
 
 # Define the callback function for the "start" command
 @app.on_message(filters.command("start"))
