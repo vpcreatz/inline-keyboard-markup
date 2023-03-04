@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Create a new Pyrogram client
-app = Client("my_bot_token")
+app = Client("6280228398:AAFZQprb6QBBy_FuYwbZwUdf_q9QIbrP-dI")
 
 # Define the callback function for the "start" command
 @app.on_message(filters.command("start"))
